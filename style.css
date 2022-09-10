@@ -11,12 +11,12 @@ body
 #header 
     {width: auto; 
     height:250px; 
-    background-color: #573d36;}
+    background-color: #573d36;
+    display: flex;}
 
 #logo 
     {width: 300px; 
     height: 250px; 
-    float: left;
     margin-left: 280px;}
 
 #logo img 
@@ -26,7 +26,6 @@ body
 #banner 
     {width: 600px; 
     height: 250px; 
-    float: left;
     margin-left: 80px;}
 
 #banner h1 
@@ -44,12 +43,13 @@ body
 #navbar 
     {width: auto; 
     height:80px; 
-    background-color: #573d36;}
+    background-color: #573d36;
+    display: flex;
+    justify-content: space-evenly;}
 
 .nav 
     {width: 370px; 
-    height: 50px; 
-    float: left;}
+    height: 50px;}
 
 .nav h2 
     {font-size: 25px; 
@@ -101,12 +101,13 @@ a:link, a:visited, a:active
 .row 
     {width: 1200px; 
     height: 700px; 
-    margin: auto;}
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;}
 
 .cont 
     {width: 350px; 
     height: 700px; 
-    float: left;
     margin-left: 40px;}
 
 .img 

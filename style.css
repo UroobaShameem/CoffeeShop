@@ -75,7 +75,7 @@ a:link, a:visited, a:active
 
 #content 
     {width: 700px; 
-    height: 280px;  
+    height: auto;  
     margin: auto;}
 
 #content h1 
@@ -89,8 +89,8 @@ a:link, a:visited, a:active
     font-family: 'Lora', serif;}
 
 #product 
-    {width: 1200px; 
-    height: 1500px; 
+    {width: auto;; 
+    height: auto; 
     margin: auto;}
 
 #product h1 
@@ -99,16 +99,16 @@ a:link, a:visited, a:active
     font-family: 'Lobster Two', cursive;}
 
 .row 
-    {width: 1200px; 
-    height: 700px; 
+    {width: auto; 
+    height: auto; 
     margin: auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;}
 
 .cont 
     {width: 350px; 
-    height: 700px; 
-    margin-left: 40px;}
+    height: 700px;}
 
 .img 
     {width: 350px; 
@@ -163,3 +163,34 @@ a:link, a:visited, a:active
 .smlcont img 
     {width: 50px;
     height: 50px;}
+
+@media (max-width: 1024px)
+{
+    #logo {
+        margin-left: 60px;
+        width: 450px; }
+
+    #banner {
+        overflow: hidden;
+        margin-left: 50px; }
+
+    #banner h1 {
+        font-size: 70px; }
+
+    #content {
+        width: 450px; }
+    
+    #content h1 {
+        font-size: 42px; }
+    
+    #content p {
+        font-size: 25px; }
+    
+    #product h1 {
+        font-size: 42px; }
+    
+    .row {
+        flex-direction: column;
+        align-items: center; }
+
+}
